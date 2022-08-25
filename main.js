@@ -93,6 +93,13 @@ function submitBookMark() {
     }
 
     var newBookMark = { name: newName, url: newUrl };
+
+    // check if exists:
+    if(findIndexByName(newBookMark.name, bookmarks) != -1){
+        console.log("Already Exists")
+        return;
+    }
+
     bookmarks.push(newBookMark);
     createCard(newBookMark);
     displayed.push(newBookMark);
