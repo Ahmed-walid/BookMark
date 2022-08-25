@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bookmark</title>
+        <meta name="description" content="A Website that helps you reach your favorite websites quickly">  
+        <meta name="author" content="Ahmed Waleed">
+        <meta name="keywords" content="bookmark, favorite">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        
+        <header id="header">
+            <br><h2>Bookmarker</h1><br><hr> 
+        </header>
+
+        <div id="bookmark-form">
+            <br>
+            <h2>Bookmark your favorite sites</h3> <br>
+            <form novalidate>
+                <label for="site-name-input">Site Name</label> <br>
+                <input type="text" name="site-name-input" id="site-name-input" placeholder="Bookmark Name"> <br>
+                <h4 class="alert" id="name-alert"></h4>
+                <label for="site-url-input">Site URL</label> <br>
+                <input type="url" name="site-url-input" id="site-url-input" placeholder="Bookmark URL (must be full url like : http(s)://facebook.com)" > <br>
+                <h4 class="alert" id="url-alert"></h4>
+        
+                <button class="btn submit" onclick="submitBookMark()">Submit</button>
+            </form>
+        </div>
+
+        <div id="bookmarks">
+
+            <!--Server Created Elements-->
+        
+        </div>
+
+        <footer>
+            <hr>
+            <p style="color:rgb(170,170,170); font-size: 14px;">&copy; 2019 Bookmarker Inc.</p>
+        </footer>
+
+        <script src="main.js"></script>
+
+    </body>
+</html>
